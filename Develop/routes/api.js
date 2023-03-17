@@ -9,7 +9,6 @@ const notes = [
 ];
 
 router.get('/notes', (req, res) => {
-    res.status(200)
     res.json(notes)
 });
 
