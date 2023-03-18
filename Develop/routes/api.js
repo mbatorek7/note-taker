@@ -5,7 +5,6 @@ var uniqid = require("uniqid");
 var router = express.Router();
 
 router.get('/notes', (req, res) => {
-    res.json(notes)
     //read file
     fs.readFile("./db/db.json", "utf-8", (err, data) => {
         //if error then display err
@@ -41,9 +40,9 @@ router.post('/notes', (req, res) => {
 router.delete('/notes/:id', (req, res) => {
     const id = req.params.id;
     //read file
-    let db = JSON.parse(fs.readFileSync("./db/db.json"));
+    const db = JSON.parse(fs.readFileSync("./db/db.json"));
     //collect everything except note with ID we want to delete
-    let deleteNote = db.filter(item => item.id !== id);
+    const deleteNote = db.filter(item => item.id !== id);
     // update file based on note we took out
     fs.writeFileSync('db/db.json', JSON.stringify(deleteNote));
     res.json(deleteNote);
