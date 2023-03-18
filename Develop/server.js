@@ -12,5 +12,5 @@ app.use("/", fileRoutes);
 app.use("/api", api);
 
 app.listen(PORT, () => {
-    console.log(`running on ${PORT}`);
+    console.log(`server running on PORT ${PORT}`);
 });
