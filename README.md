@@ -11,7 +11,6 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 GIVEN a note-taking application
 WHEN I open the Note Taker
 THEN I am presented with a landing page with a link to a notes page
-
 WHEN I click on the link to the notes page
 THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
 WHEN I enter a new note title and the note’s text
@@ -25,7 +24,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 ## Description
-
+With this application, the user can create a list of notes. Each note is displayed on the side of the screen. When the user clicks on the note, they can see the title and text that was written. The user's notes will be saved unless the user presses the delete button.
 
 <p align="center">
     <a href="https://github.com/mbatorek7/hw11-note-taker"><img src="https://img.shields.io/badge/-See Live Site-success?style=for-the-badge"  alt="GitHub Repo" ></a>
@@ -34,7 +33,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ## Screenshots
 
 Here is what the final product looks like and how to use it:
-
+![Final product.](./Develop/assets/images/final-product.gif)
 
 ## Installation
 To clone this repo:

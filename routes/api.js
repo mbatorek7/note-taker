@@ -19,20 +19,23 @@ router.get('/notes', (req, res) => {
 });
 
 router.post('/notes', (req, res) => {
-    let db = fs.readFileSync("./db/db.json");
-    db = JSON.parse(db);
+    //read file and turn into an object
+    let db = JSON.parse(fs.readFileSync("./db/db.json"));
+    //create new note and id for each input
     var newNote = {
         title: req.body.title,
         text: req.body.text,
         // creating unique id for each note
         id: uniqid(),
     };
+    //push new note to file
     db.push(newNote);
     fs.writeFileSync("./db/db.json", JSON.stringify(db));
     res.json(db);
 });
 
 router.delete('/notes/:id', (req, res) => {
+    //read file and turn into an object
     const db = JSON.parse(fs.readFileSync("./db/db.json"));
     //collect everything except note with ID we want to delete
     const deleteNote = db.filter(item => item.id !== req.params.id);
