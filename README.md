@@ -27,7 +27,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 With this application, the user can create a list of notes. Each note is displayed on the side of the screen. When the user clicks on the note, they can see the title and text that was written. The user's notes will be saved unless the user presses the delete button.
 
 <p align="center">
-    <a href="https://github.com/mbatorek7/hw11-note-taker"><img src="https://img.shields.io/badge/-See Live Site-success?style=for-the-badge"  alt="GitHub Repo" ></a>
+    <a href="https://batorek-note-taker.herokuapp.com/"><img src="https://img.shields.io/badge/-See Live Site-success?style=for-the-badge"  alt="GitHub Repo" ></a>
 </p>
 
 ## Screenshots
